@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Citas Médicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gestión de Citas Médicas</h1>
+    </header>
+
+    
+<nav class="navegador">
+    <ul>
+        <li><a href="index.html">Registro Mascota</a></li>
+        <li><a href="citasMedicas.html">Creación de Citas</a></li>
+    </ul>
+</nav>
+
+    <main>
+        <!-- Formulario de Citas Médicas -->
+        <section>
+            <h2>Registrar Cita Médica</h2>
+            <form id="form-citas-medicas">
+                <input type="date" id="fechaCita" required>
+                <input type="time" id="horaCita" required>
+                <input type="text" id="nombreVeterinario" placeholder="Nombre del Veterinario" required>
+                <input type="text" id="nombreMascota" placeholder="Nombre de la Mascota" required>
+                <button type="submit">Registrar Cita</button>
+            </form>
+        </section>
+
+        <!-- Lista de Citas Médicas -->
+        <section>
+            <h2>Citas Médicas Registradas</h2>
+            <ul id="lista-citas"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gestión de Mascotas</p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
